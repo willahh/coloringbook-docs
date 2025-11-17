@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloring Book - Présentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="max-w-4xl mx-auto px-4 py-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Coloring Book
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 font-light max-w-2xl mx-auto">
+                L'application de coloriage créatif premium – 100 % offline, sans pub, sans compte
+            </p>
+        </header>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-blue-200">
+                Présentation
+            </h2>
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-6 border border-blue-200">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Coloring Book est une application mobile premium <span class="font-semibold text-blue-600">iOS & Android</span> (développée avec React + TypeScript + Capacitor), pensée <span class="font-semibold text-green-600">offline-first</span> et <span class="font-semibold text-purple-600">mobile-first</span>, qui permet à chacun de créer et colorier ses propres livres de coloriage personnalisés avec une qualité professionnelle.
+                </p>
+            </div>
+
+            <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">✨</span>
+                    Inspirations et caractéristiques
+                </h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                        <h4 class="font-bold text-purple-800 mb-2 flex items-center">
+                            <span class="text-lg mr-2">🎨</span>
+                            Simplicité de Canva
+                        </h4>
+                        <p class="text-gray-700 text-sm">Éditeur puissant pour assembler des scènes avec des milliers de dessins vectoriels (SVG) de haute qualité</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg border border-green-200">
+                        <h4 class="font-bold text-green-800 mb-2 flex items-center">
+                            <span class="text-lg mr-2">🖌️</span>
+                            Plaisir des meilleures apps
+                        </h4>
+                        <p class="text-gray-700 text-sm">Moteur de coloriage ultra-fluide (Lake, Pigment, Recolor) sur canvas HTML avec pinceau, pot de peinture, zoom/pan tactile</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-gradient-to-r from-emerald-50 to-green-50 p-6 rounded-lg border border-emerald-200">
+                    <h3 class="font-bold text-emerald-800 mb-3 flex items-center">
+                        <span class="text-xl mr-2">📱</span>
+                        100% Mobile
+                    </h3>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• Interface pensée pour mobile</li>
+                        <li>• Gestes tactiles optimisés</li>
+                        <li>• Performance native</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border border-orange-200">
+                    <h3 class="font-bold text-orange-800 mb-3 flex items-center">
+                        <span class="text-xl mr-2">🔒</span>
+                        100% Offline
+                    </h3>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• Pas de compte obligatoire</li>
+                        <li>• Pas de publicité</li>
+                        <li>• Fonctionne sans connexion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                <p class="text-yellow-800 font-medium flex items-center">
+                    <span class="text-xl mr-2">📄</span>
+                    Export PDF haute résolution et impression directe
+                </p>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded mt-4">
+                <p class="text-blue-800 font-medium">🎯 Démo sur demande</p>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-green-200">
+                Fonctionnalités clés
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border border-green-200">
+                    <h3 class="font-bold text-green-800 mb-2">🎨 Création de livres virtuels</h3>
+                    <p class="text-gray-700 text-sm">Création et organisation de livres de coloriage personnalisés avec gestion avancée des pages et contenu.</p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-blue-800 mb-2">📄 Gestion des pages</h3>
+                    <p class="text-gray-700 text-sm">Ajout et organisation de pages pour créer un livre de coloriage personnalisé, avec une interface mobile first pour une navigation fluide sur tous les appareils.</p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-purple-800 mb-2">✨ Composition graphique Canva-like</h3>
+                    <p class="text-gray-700 text-sm">Bibliothèque d'assets prédéfinis de haute qualité (dessins, cadres, textes) pour personnaliser les scènes de manière intuitive, avec un drag-and-drop simple et des outils d'édition inspirés de Canva.</p>
+                </div>
+                <div class="bg-gradient-to-r from-yellow-50 to-orange-50 p-4 rounded-lg border border-yellow-200">
+                    <h3 class="font-bold text-yellow-800 mb-2">🎨 Coloriage interactif</h3>
+                    <p class="text-gray-700 text-sm">Outils de remplissage de forme unis, en dégradé, pinceaux tels que l'aquarelle pour colorier les formes directement sur un canvas SVG, avec des outils avancés pour une expérience ludique.</p>
+                </div>
+                <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-4 rounded-lg border border-indigo-200">
+                    <h3 class="font-bold text-indigo-800 mb-2">👆 Interactions avancées</h3>
+                    <p class="text-gray-700 text-sm">Gestion poussée des interactions touch et desktop (panning, pinch, zoom, animations) pour une expérience utilisateur fluide, optimisée pour le mobile et le offline.</p>
+                </div>
+                <div class="bg-gradient-to-r from-red-50 to-pink-50 p-4 rounded-lg border border-red-200">
+                    <h3 class="font-bold text-red-800 mb-2">💾 Export et sauvegarde offline first</h3>
+                    <p class="text-gray-700 text-sm">Export PDF haute qualité, impression, sauvegarde locale des données sur fichier (fonctionne hors ligne), et possibilité d'import/export cloud pour la synchronisation.</p>
+                </div>
+                <div class="bg-gradient-to-r from-cyan-50 to-blue-50 p-4 rounded-lg border border-cyan-200">
+                    <h3 class="font-bold text-cyan-800 mb-2">📱 Support mobile</h3>
+                    <p class="text-gray-700 text-sm">Conception mobile first avec optimisation responsive, intégration iOS via Capacitor, et interactions touch prioritaires pour une utilisation nomade.</p>
+                </div>
+                <div class="bg-gradient-to-r from-gray-50 to-slate-50 p-4 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-gray-800 mb-2">♿ Accessibilité</h3>
+                    <p class="text-gray-700 text-sm">Thème sombre pour un meilleur confort visuel, et support offline pour une accessibilité partout, sans connexion requise.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-orange-200">
+                Stack technique
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border border-orange-200">
+                    <h3 class="font-bold text-orange-800 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">⚛️</span>
+                        Front-End
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        <strong>TypeScript, React, Redux</strong><br>
+                        Fabric.js, TailwindCSS, Capacitor<br>
+                        Focus offline first via service workers
+                    </p>
+                </div>
+                <div class="bg-gradient-to-r from-purple-50 to-indigo-50 p-6 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-purple-800 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">🎨</span>
+                        Technologies spécifiques
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        Canvas SVG interactif<br>
+                        Outils HTML avancés<br>
+                        Composition Canva-like
+                    </p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-6 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-blue-800 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">🚀</span>
+                        Infrastructure
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        GitHub pour le versionning<br>
+                        Render.com pour CI/CD<br>
+                        Déploiement automatisé
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-200">
+                Résultats
+            </h2>
+            <div class="bg-gradient-to-r from-indigo-50 to-purple-50 p-6 rounded-lg mb-6 border border-indigo-200">
+                <p class="text-gray-700 leading-relaxed">
+                    Coloring Book offre une <span class="font-semibold text-indigo-600">expérience fluide</span> et des <span class="font-semibold text-indigo-600">visuels vectoriels de haute qualité</span> grâce à l'utilisation d'un canvas SVG, garantissant un rendu professionnel même en mode offline.
+                </p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">🎯 Défis techniques relevés</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Canvas SVG interactif</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">React & Redux</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Animations touch</span>
+                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">Offline first</span>
+                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Mobile optimization</span>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">👥 Publics cibles</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-gradient-to-r from-pink-50 to-rose-50 p-4 rounded-lg border border-pink-200">
+                        <h4 class="font-bold text-pink-800 mb-2 flex items-center">
+                            <span class="text-lg mr-2">🎨</span>
+                            Utilisateurs grand public
+                        </h4>
+                        <p class="text-gray-700 text-sm">Tous âges pour activité ludique, création de dessins et partage avec proches.</p>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
+                        <h4 class="font-bold text-blue-800 mb-2 flex items-center">
+                            <span class="text-lg mr-2">💼</span>
+                            Créateurs de contenu
+                        </h4>
+                        <p class="text-gray-700 text-sm">Conception de livres professionnels pour vente sur Amazon avec outils Canva-like.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-teal-200">
+                Aperçu visuel
+            </h2>
+            <p class="text-gray-700 text-center mb-8 text-lg">Découvrez l'interface de Coloring Book à travers ces captures d'écran</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 p-4 rounded-xl border border-blue-200 hover:shadow-lg transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="images/Capture%20d%E2%80%99%C3%A9cran%C2%A0.%202025-11-17%20%C3%A0%2014.58.40.png" alt="Interface principale mobile" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-blue-800 mb-2 flex items-center">
+                        <span class="text-lg mr-2">📱</span>
+                        Interface principale
+                    </h4>
+                    <p class="text-gray-600 text-sm">Navigation mobile first fluide</p>
+                </div>
+
+                <div class="group bg-gradient-to-br from-yellow-50 to-orange-50 p-4 rounded-xl border border-yellow-200 hover:shadow-lg transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="images/Capture%20d%E2%80%99%C3%A9cran%C2%A0.%202025-11-17%20%C3%A0%2014.59.09.png" alt="Outils de coloriage" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-yellow-800 mb-2 flex items-center">
+                        <span class="text-lg mr-2">🎨</span>
+                        Outils de coloriage
+                    </h4>
+                    <p class="text-gray-600 text-sm">Palette interactive et pinceaux</p>
+                </div>
+
+                <div class="group bg-gradient-to-br from-purple-50 to-pink-50 p-4 rounded-xl border border-purple-200 hover:shadow-lg transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="images/Capture%20d%E2%80%99%C3%A9cran%C2%A0.%202025-11-17%20%C3%A0%2015.01.38.png" alt="Composition graphique Canva-like" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-purple-800 mb-2 flex items-center">
+                        <span class="text-lg mr-2">✨</span>
+                        Composition graphique
+                    </h4>
+                    <p class="text-gray-600 text-sm">Bibliothèque d'assets Canva-like</p>
+                </div>
+
+                <div class="group bg-gradient-to-br from-green-50 to-teal-50 p-4 rounded-xl border border-green-200 hover:shadow-lg transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="images/Capture%20d%E2%80%99%C3%A9cran%C2%A0.%202025-11-17%20%C3%A0%2015.01.54.png" alt="Gestion des pages" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-green-800 mb-2 flex items-center">
+                        <span class="text-lg mr-2">📄</span>
+                        Gestion des pages
+                    </h4>
+                    <p class="text-gray-600 text-sm">Organisation et ajout intuitif</p>
+                </div>
+
+                <div class="group bg-gradient-to-br from-indigo-50 to-blue-50 p-4 rounded-xl border border-indigo-200 hover:shadow-lg transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="images/Capture%20d%E2%80%99%C3%A9cran%C2%A0.%202025-11-17%20%C3%A0%2015.02.42.png" alt="Interactions touch" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-indigo-800 mb-2 flex items-center">
+                        <span class="text-lg mr-2">👆</span>
+                        Interactions touch
+                    </h4>
+                    <p class="text-gray-600 text-sm">Gestes tactiles et animations</p>
+                </div>
+
+                <div class="group bg-gradient-to-br from-red-50 to-pink-50 p-4 rounded-xl border border-red-200 hover:shadow-lg transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg mb-3">
+                        <img src="images/Capture%20d%E2%80%99%C3%A9cran%C2%A0.%202025-11-17%20%C3%A0%2015.03.56.png" alt="Export et sauvegarde" class="w-full h-auto group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <h4 class="font-bold text-red-800 mb-2 flex items-center">
+                        <span class="text-lg mr-2">💾</span>
+                        Export & sauvegarde
+                    </h4>
+                    <p class="text-gray-600 text-sm">PDF haute qualité et stockage</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                    <span class="text-2xl mr-2">📋</span>
+                    Guide d'utilisation des images
+                </h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-4 rounded border border-blue-200">
+                        <h4 class="font-bold text-blue-800 mb-2">🎨 Pour Canva</h4>
+                        <ul class="text-gray-700 text-sm space-y-1">
+                            <li>• Téléchargez les images du dossier <code>images/</code></li>
+                            <li>• Importez-les dans votre design Canva</li>
+                        </ul>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded border border-green-200">
+                        <h4 class="font-bold text-green-800 mb-2">📄 Pour Google Docs</h4>
+                        <ul class="text-gray-700 text-sm space-y-1">
+                            <li>• Hébergez sur Imgur/GitHub/Drive</li>
+                            <li>• Remplacez les chemins par URLs</li>
+                            <li>• Copiez-collez le contenu Markdown</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white rounded-xl shadow-lg p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-6 pb-2 border-b-2 border-emerald-200">
+                Prochaines étapes
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-r from-emerald-50 to-green-50 p-6 rounded-lg border border-emerald-200">
+                    <h3 class="font-bold text-emerald-800 mb-3 flex items-center">
+                        <span class="text-xl mr-2">🚀</span>
+                        Phase Alpha
+                    </h3>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• Intégration retours utilisateurs</li>
+                        <li>• Amélioration ergonomie mobile</li>
+                        <li>• Optimisation offline</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg border border-blue-200">
+                    <h3 class="font-bold text-blue-800 mb-3 flex items-center">
+                        <span class="text-xl mr-2">✨</span>
+                        Nouvelles fonctionnalités
+                    </h3>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• Partage en ligne avec sync offline</li>
+                        <li>• Dessins personnalisés utilisateurs</li>
+                        <li>• Templates Canva avancés</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-orange-50 to-red-50 p-6 rounded-lg border border-orange-200">
+                    <h3 class="font-bold text-orange-800 mb-3 flex items-center">
+                        <span class="text-xl mr-2">⚡</span>
+                        Optimisations
+                    </h3>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• Performance canvas SVG</li>
+                        <li>• Fluidité sur mobile</li>
+                        <li>• Projets volumineux</li>
+                    </ul>
+                </div>
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-lg border border-purple-200">
+                    <h3 class="font-bold text-purple-800 mb-3 flex items-center">
+                        <span class="text-xl mr-2">🌟</span>
+                        Lancement Bêta
+                    </h3>
+                    <ul class="text-gray-700 text-sm space-y-2">
+                        <li>• Version publique bêta</li>
+                        <li>• Collecte retours utilisateurs</li>
+                        <li>• Préparation lancement commercial</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gradient-to-r from-gray-900 to-gray-800 text-white rounded-xl p-8 text-center">
+            <h3 class="text-2xl font-bold mb-4">William Ravel</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4 mb-6">
+                <a href="mailto:wravel@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-lg transition-colors flex items-center">
+                    <span class="mr-2">📧</span>
+                    wravel@gmail.com
+                </a>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://williamravel.netlify.app" class="text-gray-300 hover:text-white transition-colors flex items-center" target="_blank">
+                    <span class="mr-1">🌐</span>
+                    Portfolio
+                </a>
+                <a href="https://www.linkedin.com/in/wravel" class="text-gray-300 hover:text-white transition-colors flex items-center" target="_blank">
+                    <span class="mr-1">💼</span>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/willahh" class="text-gray-300 hover:text-white transition-colors flex items-center" target="_blank">
+                    <span class="mr-1">🐙</span>
+                    GitHub
+                </a>
+            </div>
+            <p class="text-gray-400 text-sm">Coloring Book - Application SaaS pour créer des livres de coloriage personnalisés</p>
+        </footer>
+    </div>
+</body>
+</html>
